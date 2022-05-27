@@ -1,0 +1,129 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################# NAVIGATION STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+#mainNavigation {
+  background: var(--dark-background);
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  padding: 1.5em 0;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+  font-family: var(--logo-font);
+  color: var(--gold-background);
+}
+
+.links {
+  height: auto;
+  width: 100%;
+  color: white;
+}
+
+.links a {
+  font-family: var(--headings-font-family);
+  color: var(--heading-white-text);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.links .active {
+  color: var(--active-color);
+}
+
+.links a:hover {
+  color: var(--active-color);
+}
+
+.primary-nav {
+  width: 100%;
+  gap: 2em;
+}
+
+/* ###################################################### */
+/* ################### MEDIA QUERIES ###################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- NAVIGATION MEDIA QUERIES (max-width: 800px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media screen and (max-width: 800px) {
+  .nav-wrapper {
+    display: block;
+    margin-left: 0 auto;
+  }
+
+  .nav-toggle {
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+
+  .open-menu {
+    display: block;
+    background-image: url(/asstets/icons/icons-gold/mobile_menu.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 50px;
+    height: 50px;
+  }
+  .close-menu {
+    display: block;
+    background-image: url(/asstets/icons/icons-gold/mobile_menu-close.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+  .nav-toggle:hover {
+    color: var(--active-color);
+    transform: rotate(180deg);
+  }
+  .links {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2em;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .show-links {
+    height: 40em;
+  }
+  .links a {
+    font-size: 1.2rem;
+  }
+  .links a:hover {
+    color: var(--active-color);
+  }
+  .primary-nav {
+    flex-direction: column;
+  }
+  .secondary-nav {
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+}
