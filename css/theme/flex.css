@@ -1,0 +1,158 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################ FLEX GLOBAL STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* <<<-------------  Flex Classes ------------>>> */
+
+/* 
+
+FLEX WRAP 
+  - flex
+  - flex wrap
+  - f-no-wrap
+  - f-wrap-col--center
+  - f-wrap-row--center
+  - f-wrap-center--center
+  - f-wrap-s-evenly--center
+
+FLEX CENTER
+  - f-center 
+  - f-center--center
+  - f-center--space-between
+  - f-col--center
+  - f-col--center-center
+
+FLEX START
+  - f-col--start
+  - f-col-center--start
+  - f-row-start
+  - f-row-center--start
+
+ */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+/* FLEX WRAP */
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f-no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.f-wrap-col--center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.f-wrap-center--center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FLEX CENTER */
+.f-center-jcs {
+  display: flex;
+  justify-content: center;
+}
+
+.f-center--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-center--start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.f-wrap-s-evenly--center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.f-space-even--center {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.f-center--space-between {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-col--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-col--center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FLEX START */
+.f-col-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.f-col-center--start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.f-col-center--end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.f-row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.f-row-start--center {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.f-row-center--flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

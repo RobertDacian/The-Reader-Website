@@ -1,0 +1,72 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ############## GLOBAL VARIABLES STYLES ##############  */
+/* ###################################################### */
+/* ###################################################### */
+
+html {
+  /* <<<-------------  Colors and Shadows ------------>>> */
+  /* backgrounds */
+  --white-background: #fafafa;
+  --dark-background: #2b2f3a;
+  --gold-background: #eac7a1;
+  --primary-color: #2b2f3a;
+  --secondary-color: #eac7a1;
+  --border-color: #adb5bd;
+
+  /* font colors */
+  --heading-dark-text: #404658;
+  --heading-white-text: #fafafa;
+  --paragraph-white-text: #fafafa;
+  --paragraph-dark-text: #404658;
+  --active-color: #909090;
+  --link-color: #2f4ea7;
+
+  /* shadows */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* <<<---------  Font, Size, Weight, Height --------->>> */
+  /* font family */
+  --text-font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif;
+  --headings-font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+
+  /* font size desktop */
+  --regular-font-size: 1rem;
+  --small-font-size: 0.9rem;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* <<<------ Margin, Padding, Borders, Transitions, Width ------>>> */
+  /* desktop padding */
+  --desktop-section-padding: 6em 0;
+  --primary-cta-padding: 1.2em 3em;
+  --secondary-cta--padding: 0.8em 2em;
+  --no-padding: 0;
+  --container-padding: 0 1.5em;
+  --card-padding: 2em 0;
+
+  /* mobile padding */
+  --mobile-section-padding: 3em 0;
+  --slider-padding: 5rem;
+
+  /* margin */
+  --no-margin: 0;
+  --primary-cta--margin: 1.5em 0 0;
+  --secondary-cta--margin: 1.2em 0 0;
+  --card-link--margin: 0 0 1em;
+
+  /* transitions */
+  --transition: all 0.3s linear;
+
+  /* width */
+  --primary-cta-width: 12em;
+  --secondary-cta-width: 7.5em;
+
+  --handle-size: 3rem;
+  --img-gap: 0.25rem;
+}

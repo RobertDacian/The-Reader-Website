@@ -1,0 +1,168 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################ GRID GLOBAL STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* <<<-------------  Grid Classes ------------>>> */
+/*
+GRID
+  - .grid
+
+TWO COL GRID
+  - two-col-grid-center--center
+
+THREE COL GRID
+  - three-col-grid-start--center 
+  - three-col-grid-center--start
+
+FOUR COL GRID
+  - four-col-grid-center--start
+  - four-col-grid-center--center
+  - 
+ */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+/* GRID */
+.grid {
+  display: grid;
+}
+
+/* TWO COL GRID */
+
+/* grid styles used on homepage hero */
+.two-col-grid-center--center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* THREE COL GRID */
+
+/* grid styles used on about page  */
+.three-col-grid-start--center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+}
+
+/* grid styles used on article cards */
+.three-col-grid-center--start {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-items: center;
+  align-items: start;
+}
+
+/* FOUR COL GRID */
+
+/* grid styles used on popular article cards */
+.four-col-grid-center--start {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+}
+
+/* grid styles used on footer */
+.four-col-grid-center--center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+/* ###################################################### */
+/* ################### MEDIA QUERIES ###################  */
+/* ###################################################### */
+
+/* <<<---------------------------------------------------->>> */
+/* <<<---------- MOBILE STYLES (max-width: 1024px) ------->>> */
+/* <<<---------------------------------------------------->>> */
+
+/* grid styles used on article cards */
+@media (max-width: 1024px) {
+  .three-col-grid-center--start {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
+  }
+  /* grid styles used on popular article cards */
+  .four-col-grid-center--start {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+/* <<<---------------------------------------------------->>> */
+/* <<<---------- MOBILE STYLES (max-width: 900px) -------->>> */
+/* <<<---------------------------------------------------->>> */
+
+/* grid styles used on article cards */
+@media (max-width: 900px) {
+  .three-col-grid-center--start {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5em;
+  }
+}
+
+/* <<<---------------------------------------------------->>> */
+/* <<<---------- MOBILE STYLES (max-width: 800px) -------->>> */
+/* <<<---------------------------------------------------->>> */
+
+/* grid styles used on article cards */
+@media (max-width: 800px) {
+  .two-col-grid-center--center {
+    grid-template-columns: 1fr;
+    row-gap: 1.5em;
+  }
+
+  /* grid styles used on about page  */
+  .three-col-grid-start--center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* <<<---------------------------------------------------->>> */
+/* <<<---------- MOBILE STYLES (max-width: 640px) -------->>> */
+/* <<<---------------------------------------------------->>> */
+
+/* grid styles used on article cards */
+@media (max-width: 640px) {
+  .three-col-grid-center--start {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3em;
+  }
+
+  /* grid styles used on about page  */
+  .three-col-grid-start--center {
+    grid-template-columns: 1fr;
+  }
+  /* grid styles used on popular article cards */
+  .four-col-grid-center--start {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+  }
+}

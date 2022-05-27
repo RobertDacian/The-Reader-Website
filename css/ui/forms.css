@@ -1,0 +1,204 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################# COMMENT FORM STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------------- FORM GLOBAL STYLES (desktop) -------------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+textarea {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  border: 1.5px solid var(--gold-background);
+}
+
+input,
+select {
+  position: relative;
+  height: 3.2em;
+  width: 100%;
+  margin: 0 auto;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: var(--active-color);
+  font-size: var(--regular-font-size);
+  font-family: var(--text-font-family);
+}
+
+textarea::placeholder {
+  color: var(--active-color);
+  font-size: var(--regular-font-size);
+  font-family: var(--text-font-family);
+
+  padding: 0.5em;
+}
+
+#fullName,
+#contactSelect,
+#contactEmail,
+#subject {
+  font-size: var(--regular-font-size);
+  font-family: var(--text-font-family);
+}
+
+#contactMessage {
+  height: 10em;
+  font-size: var(--regular-font-size);
+  font-family: var(--text-font-family);
+}
+
+.form-error {
+  color: red;
+  margin-top: 1em;
+  font-size: 0.8rem;
+}
+
+.contact-msg .form-error {
+  color: red;
+  margin: 1em 0;
+}
+
+.msg-container {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alert.success {
+  text-align: center;
+  background: #b7e3b4;
+  color: var(--paragraph-dark-text);
+  border: 1px solid rgb(6, 107, 25);
+  padding: 1em;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------------- CONTACT FORM STYLES (desktop) -------------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  /* margin: 6em 0; */
+}
+
+form.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+}
+
+.contact-msg {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* margin-top: 1em; */
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contactEmail,
+#fullName {
+  margin: 0%;
+}
+
+#contactMessage {
+  height: 10em;
+}
+
+.form-field__contact {
+  width: 100%;
+}
+
+.form-field__contact input,
+.form-field textarea {
+  margin-top: 1em;
+}
+
+#contactButtonReset {
+  display: inline-block;
+  text-align: center;
+  font-family: var(--text-font-family);
+  font-size: var(--regular-font-size);
+  background-color: var(--site-color);
+  margin: var(--secondary-cta--margin);
+  padding: 0;
+  border: none;
+  width: var(--secondary-cta-width);
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  border-radius: none;
+}
+
+#contactButtonReset {
+  margin-left: 1em;
+}
+
+/* ###################################################### */
+/* ################### MEDIA QUERIES ###################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<--- CONTACT FORM MEDIA QUERIES STYLES (Max-width - 800px) --->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media screen and (max-width: 800px) {
+  form.contact {
+    width: 100%;
+  }
+  .msg-container {
+    width: 70%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<--- CONTACT FORM MEDIA QUERIES STYLES (Max-width - 640px) --->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media screen and (max-width: 640px) {
+  .contact-detail {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .msg-container {
+    width: 90%;
+  }
+
+  button#contactButton {
+    width: 100%;
+  }
+
+  #contactButtonReset {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0 0;
+  }
+}

@@ -1,0 +1,161 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ########## MAIN ARTICLES PAGE LAYOUT STYLES #########  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------ ARTICLES PAGE HERO SECTION (desktop) ----------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+.small-hero--section {
+  background: var(--dark-background);
+  color: var(--paragraph-white-text);
+  text-align: center;
+}
+
+.small-hero--content h1 {
+  color: var(--paragraph-white-text);
+}
+.non-active {
+  color: var(--paragraph-white-text);
+}
+
+.non-active:hover {
+  color: var(--active-color);
+  transition: var(--transition);
+}
+
+.bread-crumbs {
+  gap: 1.5em;
+  font-family: var(--headings-font-family);
+}
+
+.active {
+  color: var(--active-color);
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------- ARTICLES PAGE ARTICLES SECTION (desktop) --------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+.filters {
+  margin-top: 3em;
+}
+
+.categories {
+  gap: 2em;
+}
+
+.category-btn {
+  display: block;
+  padding: 0.25em;
+  text-transform: uppercase;
+  background: transparent;
+  border-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--small-font-size);
+  font-family: var(--headings-font-family);
+}
+
+.search-filter {
+  width: 40%;
+}
+
+input#search-input {
+  height: 3em;
+  width: 100%;
+
+  border: 0.5px solid var(--border-color);
+}
+
+input#search-input:focus-visible {
+  border: 1.5px solid var(--gold-background);
+}
+
+.articles {
+  padding: 6em 0 3em;
+}
+
+.articles-wrapper {
+  gap: 1.5em;
+}
+
+.card-wrapper {
+  width: 100%;
+}
+
+.card {
+  height: auto;
+  width: 100%;
+  border: 0.5px solid var(--border-color);
+  transition: 0.4s ease-out;
+  box-shadow: 0px 5px 15px var(--dark-shadow);
+}
+
+.centered-cta-wrapper .primary-cta-dark {
+  margin: 0;
+  margin-top: 3em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* ## MAIN ARTICLES PAGE MEDIA QUERIES LAYOUT STYLES ###  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ################### MEDIA QUERIES ###################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<----- ARTICLES PAGE ARTICLES SECTION (max-width: 800px) ----->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media (max-width: 800px) {
+  .small-hero--content {
+    padding-bottom: 3em;
+  }
+
+  .articles {
+    padding: 3em 0 3em;
+  }
+
+  .filters {
+    gap: 1.5em;
+  }
+
+  .categories {
+    margin: 0 auto;
+  }
+  .search-filter {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<----- ARTICLES PAGE ARTICLES SECTION  (max-width: 640px) ---->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 640px) {
+  .filters {
+    margin-top: 1em;
+  }
+  .categories {
+    gap: 1em;
+  }
+
+  .search-filter {
+    width: 100%;
+  }
+}

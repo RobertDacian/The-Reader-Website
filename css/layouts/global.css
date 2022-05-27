@@ -1,0 +1,225 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################ GLOBAL LAYOUT STYLES ###############  */
+/* ###################################################### */
+/* ###################################################### */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* <<<------------------ Body Global Styles ---------------->>> */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: var(--text-font-family);
+  line-height: 1.5rem;
+  background-color: var(--white-background);
+  color: var(--paragraph-dark-text);
+  font-weight: var(--font-weight-regular);
+  min-height: 100vh;
+  font-size: var(--regular-font-size);
+  margin: var(--no-margin);
+  padding: var(--no-padding);
+  position: relative;
+}
+
+/* ###################################################### */
+/* ################ DESKTOP STYLES ###############  */
+/* ###################################################### */
+
+/* <<<------------------ Sections Global Styles ---------------->>> */
+section {
+  padding: var(--desktop-section-padding);
+  margin: var(--no-margin);
+}
+
+/* <<<------------------ Container Global Styles ---------------->>> */
+.container {
+  /* background-color: rgb(163, 163, 152); */
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  padding: var(--container-padding);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.nav-container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* <<<------------------ Images Global Styles ---------------->>> */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* <<<------------------ List Global Styles ---------------->>> */
+ul {
+  /* list-style-type: none; */
+  margin: 0;
+  padding: 0;
+}
+
+/* <<<------------------ Links and Buttons Global Styles ---------------->>> */
+.active {
+  color: var(--active-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: var(--font-weight-regular);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.primary-cta-gold {
+  display: inline-block;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--gold-background);
+  color: var(--paragraph-dark-text);
+  margin: var(--primary-cta--margin);
+  padding: var(--primary-cta-padding);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-cta-dark {
+  display: inline-block;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--dark-background);
+  color: var(--paragraph-white-text);
+  margin: var(--primary-cta--margin);
+  padding: var(--primary-cta-padding);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-cta-gold {
+  display: inline-block;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--gold-background);
+  color: var(--paragraph-dark-text);
+  margin: var(--secondary-cta--margin);
+  padding: var(--secondary-cta--padding);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary-cta-dark {
+  display: inline-block;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--dark-background);
+  color: var(--paragraph-white-text);
+  margin: var(--secondary-cta--margin);
+  padding: var(--secondary-cta--padding);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-link {
+  display: inline-block;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  color: var(--link-color);
+  margin: var(--card-link--margin);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subscribe-btn {
+  display: inline-block;
+  text-align: center;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--gold-background);
+  color: var(--paragraph-dark-text);
+  padding: var(--secondary-cta--padding);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+#prev-btn {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: transparent;
+  border-width: 0;
+  color: var(--paragraph-dark-text);
+  margin: 2em 0 1em;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#next-btn {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: var(--headings-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-semibold);
+  background-color: transparent;
+  border-width: 0;
+  color: var(--paragraph-dark-text);
+  margin: 2em 0 1em;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ###################################################### */
+/* ################ MEDIA QUERIES STYLES ###############  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<--------------- POST SECTION (max-width: 800px) ------------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  section {
+    padding: var(--mobile-section-padding);
+  }
+
+  .container {
+    width: 100vw;
+  }
+}

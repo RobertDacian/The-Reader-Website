@@ -1,0 +1,90 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ########## MAIN CONTACT PAGE LAYOUT STYLES ##########  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ###################### DESKTOP ######################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------- CONTACT PAGE MAP SECTION (desktop) ----------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+section.map {
+  padding-bottom: 0;
+}
+
+.cards-wrapper {
+  background-color: #f4e3d0;
+  padding: 3em;
+  margin-top: 3em;
+  /* align-items: flex-start; */
+}
+
+.main-card {
+  width: 50%;
+}
+
+.border {
+  border-top: 0.5px solid var(--dark-background);
+  padding-top: 3em;
+  margin-top: 3em;
+}
+
+.card-content.card-content--last {
+  gap: 1em;
+  /* margin-top: 3em; */
+  text-align: center;
+  width: 100%;
+}
+
+.card-content.contact {
+  gap: 1.5em;
+  text-align: center;
+}
+
+.card-content--last {
+  margin-bottom: 0;
+}
+
+.card-social-icons {
+  gap: 2em;
+}
+
+.card-content img {
+  width: 20px;
+}
+.card-content.contact a {
+  font-family: var(--headings-font-family);
+  color: var(--heading-dark-text);
+}
+
+.card-content--last img {
+  width: 50px;
+}
+
+.form-wrapper {
+  margin-bottom: 3em;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* ##### CONTACT PAGE MEDIA QUERIES LAYOUT STYLES ######  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ################### MEDIA QUERIES ###################  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<----- ARTICLES PAGE ARTICLES SECTION (max-width: 640px) ----->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media (max-width: 640px) {
+  .main-card {
+    width: 100%;
+  }
+}
