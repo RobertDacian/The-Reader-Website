@@ -2,7 +2,7 @@
 
 ![image](https://github.com/RobertDacian/Rainy-Days-Website/blob/61b4968d775bf1f9a34ceb1b613801fd987af7b8/images/product-images/shop.jpg)
 
-Rainy Days is a CMS project using WordPress REST API, HTML5, CSS3 and JavaScript, and some extra interactions.
+The Reader is a CMS project using WordPress REST API, HTML5, CSS3 and JavaScript, and some extra interactions.
 
 ## Description
 
