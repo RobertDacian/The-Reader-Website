@@ -1,8 +1,8 @@
 # The Reader
 
-![image](https://github.com/RobertDacian/Rainy-Days-Website/blob/61b4968d775bf1f9a34ceb1b613801fd987af7b8/images/product-images/shop.jpg)
+![image](https://github.com/RobertDacian/The-Reader-Website/blob/16a243468b83cc01314c3fbfcbf65f7742b1e0f1/asstets/images/all-images/lifestyle.jpg)
 
-The Reader is a CMS project using WordPress REST API, HTML5, CSS3 and JavaScript, and some extra interactions.
+The Reader is a CMS project using WordPress REST API, HTML5, CSS3 and JavaScript, contact form, and some extra interactions.
 
 ## Description
 
@@ -18,19 +18,16 @@ Tools and techniques used in the project:
 - Wordpress
 - WordPress plugins
 - CMS
-- Product Setup
-- Website Host (GoDaddy)
-- File Manager
-- CPanel
+- Articles Setup
 - HTML5
 - CSS3
 - JavaScript
 
 **Project Links**
 
-- [See on GitHub](https://github.com/RobertDacian/Rainy-Days-Website.git)
+- [See on GitHub](https://github.com/RobertDacian/The-Reader-Website.git)
 
-- [Live Version ](https://rainy-days-project.netlify.app/)
+- [Live Version ](https://project-exam-one.netlify.app/)
 
 ## Contact
 
