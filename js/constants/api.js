@@ -1,4 +1,4 @@
-export const baseURL = "https://project-exam.dev-squid.com/wp-json/wp/v2/article/";
+export const baseURL = "https://project-exam-one.netlify.app/wp-json/wp/v2/article/";
 
 export const articlesURL = baseURL + "?acf_format=standard&per_page=12";
 
